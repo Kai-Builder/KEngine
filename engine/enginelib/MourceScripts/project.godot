@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="MourceScripts"
+run/main_scene="res://Spatial.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=424
+window/size/height=252
+window/size/resizable=false
+window/size/fullscreen=true
+window/size/test_width=374
+window/size/test_height=238
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

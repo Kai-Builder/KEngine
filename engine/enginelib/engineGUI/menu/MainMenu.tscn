@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://verdana.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://menu/MainMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.47451, 0.00392157, 0.00392157, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0.87451, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.611765, 0.427451, 0.0196078, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hub" type="Panel" parent="."]
+margin_right = 1027.0
+margin_bottom = 603.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Hub"]
+margin_left = 259.936
+margin_top = 98.3658
+margin_right = 927.936
+margin_bottom = 302.366
+custom_fonts/normal_font = SubResource( 1 )
+text = "The Mource Engine HUB"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labels" type="RichTextLabel" parent="Hub"]
+margin_left = 51.0
+margin_top = 348.0
+margin_right = 1022.0
+margin_bottom = 552.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "Mource Addons                    Mource Projects"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Hub"]
+margin_left = 40.363
+margin_top = 433.903
+margin_right = 368.363
+margin_bottom = 503.903
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "View Available Addons"
+
+[node name="Button2" type="Button" parent="Hub"]
+margin_left = 631.363
+margin_top = 441.903
+margin_right = 959.363
+margin_bottom = 511.903
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "View Your Projects"
+__meta__ = {
+"_edit_use_anchors_": false
+}

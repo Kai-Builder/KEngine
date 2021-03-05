@@ -1,0 +1,19 @@
+{
+  "comment": "--",
+  "block": "--[[]]",
+  "keywords": [
+    "if",
+    "while",
+    "true",
+    "false",
+    "else",
+    "elseif",
+    "function",
+    "end",
+    "SWEP",
+    "native",
+    "os",
+    "execute",
+    "math"
+  ]
+}
