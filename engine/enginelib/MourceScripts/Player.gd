@@ -23,6 +23,7 @@ var can_slide = false
 
 func _ready():
 	$Head/DirectionIndicator.hide()
+
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
@@ -43,6 +44,7 @@ func walk():
 	else:
 		head_angle = 0
 	camera_height = -0.1
+
 	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_Z) or Input.is_key_pressed(KEY_UP):
 		direction.z = -1
 		if Input.is_key_pressed(KEY_SHIFT) and is_on_floor() and not Input.is_mouse_button_pressed(BUTTON_LEFT) and not Input.is_mouse_button_pressed(BUTTON_RIGHT) and not $CrouchTween.is_active():
